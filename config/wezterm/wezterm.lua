@@ -9,4 +9,6 @@ config.cursor_blink_rate = 500
 config.font = wezterm.font 'JetBrains Mono'
 config.color_scheme = 'Morada (Gogh)'
 
+config.window_background_opacity = .95
+
 return config
