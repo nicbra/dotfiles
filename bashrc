@@ -2,10 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-# ble.sh:
-[[ $- == *i* ]] &&
-  source -- "$HOME/.local/share/blesh/ble.sh" --attach=none --rcfile "$HOME/.blerc"
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -129,4 +125,3 @@ alias rc='hx ~/.bashrc; source ~/.bashrc;'
 alias icat='wezterm imgcat'
 
 eval "$(starship init bash)"
-[[ ! ${BLE_VERSION-} ]] || ble-attach
