@@ -125,3 +125,10 @@ alias rc='hx ~/.bashrc; source ~/.bashrc;'
 alias icat='wezterm imgcat'
 
 eval "$(starship init bash)"
+
+dotfiles_path="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+
+# Put custom script files to source in this file:
+if [[ -f "$dotfiles_path/bashrc.local" ]]; then
+  source "$dotfiles_path/bashrc.local"
+fi
