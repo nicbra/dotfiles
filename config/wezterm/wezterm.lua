@@ -11,4 +11,19 @@ config.color_scheme = 'Morada (Gogh)'
 
 config.window_background_opacity = .95
 
+
+config.mouse_bindings = {
+  {
+    event = { Up = { streak = 1, button = 'Left' } },
+    mods = 'NONE',
+    action = wezterm.action.CompleteSelection 'PrimarySelection',
+  },
+  {
+    event = { Up = { streak = 1, button = 'Left' } },
+    mods = 'SHIFT',
+    action = wezterm.action.CompleteSelection 'PrimarySelection',
+  },
+  -- keep the default "click on link to open" behaviour for triple/double
+}
+
 return config

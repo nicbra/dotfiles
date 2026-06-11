@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export ELECTRON_OZONE_PLATFORM_HINT=wayland
+#export ELECTRON_OZONE_PLATFORM_HINT=wayland
 export SSH_AUTH_SOCK='/home/nicholas/.config/Keeper Password Manager/keeper-ssh-agent.sock'
 alias dng='WINEPREFIX="$HOME/wine-dng" wine "$HOME/wine-dng/drive_c/Program Files/Adobe/Adobe DNG Converter/Adobe DNG Converter.exe"'
 

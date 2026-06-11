@@ -52,7 +52,8 @@ regolith-session-flashback \
 regolith-look-lascaille \
 xdg-desktop-portal-regolith \
 dunst \
-libnotify-bin
+libnotify-bin \
+wofi
 
 sudo apt purge regolith-rofication
 
