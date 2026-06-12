@@ -132,3 +132,4 @@ dotfiles_path="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
 if [[ -f "$dotfiles_path/bashrc.local" ]]; then
   source "$dotfiles_path/bashrc.local"
 fi
+export PATH="$HOME/.local/bin:$PATH"
